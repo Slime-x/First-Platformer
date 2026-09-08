@@ -1,0 +1,38 @@
+[gd_scene format=3 uid="uid://c4v2dmsdipry2"]
+
+[ext_resource type="Texture2D" uid="uid://cbiafpsg8wiqm" path="res://assets/Tilemaps/tilemap_packed.png" id="1_t7k1d"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ytnpw"]
+atlas = ExtResource("1_t7k1d")
+region = Rect2(72, 54, 18, 18)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ahnat"]
+atlas = ExtResource("1_t7k1d")
+region = Rect2(90, 54, 18, 18)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wisdk"]
+atlas = ExtResource("1_t7k1d")
+region = Rect2(108, 54, 18, 18)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_qtct1"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ytnpw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ahnat")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wisdk")
+}],
+"loop": 2,
+"name": &"default",
+"speed": 3.0
+}]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" unique_id=1171838523]
+scale = Vector2(2, 2)
+sprite_frames = SubResource("SpriteFrames_qtct1")
+autoplay = "default"
+frame_progress = 0.35334274
