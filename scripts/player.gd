@@ -4,8 +4,9 @@ extends CharacterBody2D
 
 const SPEED = 300.0
 const JUMP_VELOCITY = -400.0
-var start_position = Vector2(100,150)
+@export var start_position = Vector2(100,150)
 var coin = 0
+var key = false
 var jump = 0
 var is_dashing = false
 var dash_speed = 1000
@@ -15,6 +16,7 @@ var dash_no = 1
 var is_jumping = false
 
 func _physics_process(delta: float) -> void:
+	
 	# Add the gravity.
 	if not is_on_floor():
 		velocity += get_gravity() * delta
@@ -31,7 +33,7 @@ func _physics_process(delta: float) -> void:
 		jump -= 1
 		animate_sprite.play("jump")
 		is_jumping = true
-		print("false")
+		
 	
 
 

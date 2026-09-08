@@ -169,7 +169,7 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_mwfs3"]
-size = Vector2(18, 23)
+size = Vector2(18, 31)
 
 [node name="player" type="CharacterBody2D" unique_id=2101612363]
 z_index = 5
@@ -184,7 +184,7 @@ animation = &"jump"
 autoplay = "idle"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=502633701]
-position = Vector2(0, 8.5)
+position = Vector2(0, 4.5)
 shape = SubResource("RectangleShape2D_mwfs3")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1102128229]
