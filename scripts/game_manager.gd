@@ -2,7 +2,6 @@ extends Node
 
 var key_label
 
-
 var coin = 0
 var key = true
 var level = 1
