@@ -5,8 +5,6 @@ extends CharacterBody2D
 const SPEED = 300.0
 const JUMP_VELOCITY = -400.0
 @export var start_position = Vector2(100,150)
-var coin = 0
-var key = false
 var jump = 0
 var is_dashing = false
 var dash_speed = 1000
