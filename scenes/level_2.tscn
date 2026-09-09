@@ -1,6 +1,6 @@
 [gd_scene format=4 uid="uid://qeuygolyv0lp"]
 
-[ext_resource type="Texture2D" uid="uid://cbiafpsg8wiqm" path="res://assets/Tilemaps/tilemap_packed.png" id="1_jm1iu"]
+[ext_resource type="Texture2D" uid="uid://cbiafpsg8wiqm" path="res://assets/Map/tilemap_packed.png" id="1_jm1iu"]
 [ext_resource type="PackedScene" uid="uid://jm80xy3n5ak7" path="res://scenes/player.tscn" id="2_pbc48"]
 [ext_resource type="PackedScene" uid="uid://vicxxtex5ov8" path="res://scenes/coin.tscn" id="3_pbc48"]
 
