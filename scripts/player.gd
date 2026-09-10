@@ -20,7 +20,6 @@ func _physics_process(delta: float) -> void:
 		velocity += get_gravity() * delta
 
 	# Handle jump.
-	
 	if is_on_floor():
 		jump = 2
 		is_jumping = false
@@ -71,6 +70,18 @@ func _physics_process(delta: float) -> void:
 		velocity.x = dash_direction * dash_speed
 
 	move_and_slide()
+	
+	
+	for i in get_slide_collision_count():
+		var collision = get_slide_collision(i)
+		var collider = collision.get_collider()
+		if collider is TileMapLayer:
+			var local_pos = collider.to_local(collision.get_position())
+			var coords = collider.local_to_map(local_pos)
+			var data = collider.get_cell_tile_data(coords)
+			if data and data.get_custom_data("is_spike"):
+				position = start_position
+				print("DIEEE")
 	
 func dash():
 	is_dashing = true

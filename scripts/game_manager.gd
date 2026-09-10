@@ -3,7 +3,7 @@ extends Node
 var key_label
 
 var coin = 0
-var key = true
+var key = false
 var level = 1
 
 func add_coin():
