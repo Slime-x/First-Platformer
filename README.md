@@ -5,9 +5,11 @@ Playable URL: https://slime001.itch.io/my-platformer
 So, I made this game as my first ever godot project for HC. This was my first game so i needed a lot of time to learn and adjust to Godot. 
 
 <h2> Controls </h2>
-A, <- :: move left <br>
-D, -> :: move right <br>
-w, [Space bar], ^{up arrow} :: jump <br>
+A, <- === move left <br>
+D, -> === move right <br>
+w, [Space bar], [UP arrow] === jump <br>
+Q === Dash ( dash on whichever way you are facing.)
+2*(w, [Space bar], [UP arrow]) === Double Jump. ( resets on touching a floor )
 
 <h2> Concept of the Game </h2>
 I was learning to make a platformer as it is the easiest so the objective of this game is to find a key located in the map and use that map to win the game. Its pretty straight fordward but do look for traps and shi! <br>
