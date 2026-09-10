@@ -1,7 +1,6 @@
 extends Area2D
 
-@onready var double_jump: Label = $"../Label/Double Jump"
-
+@onready var double_jump: Label = $"../../../Label/Double Jump"
 @onready var animate: AnimatedSprite2D = $AnimatedSprite2D
 
 

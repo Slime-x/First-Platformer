@@ -64,7 +64,6 @@ func _physics_process(delta: float) -> void:
 	if Input.is_action_just_pressed("Dash") and not is_dashing and dash_no == 1:
 		dash()
 		await get_tree().create_timer(1.5).timeout
-		print("Dash reload")
 		dash_no = 1
 	if is_dashing:
 		velocity.x = dash_direction * dash_speed
@@ -81,7 +80,6 @@ func _physics_process(delta: float) -> void:
 			var data = collider.get_cell_tile_data(coords)
 			if data and data.get_custom_data("is_spike"):
 				position = start_position
-				print("DIEEE")
 	
 func dash():
 	is_dashing = true
