@@ -22,7 +22,7 @@ GameManager="*uid://cbo0cwwdb3fic"
 [display]
 
 window/size/viewport_width=720
-window/size/viewport_height=500
+window/size/viewport_height=480
 window/stretch/mode="canvas_items"
 window/stretch/aspect="expand"
 

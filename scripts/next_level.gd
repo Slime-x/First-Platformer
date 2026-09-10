@@ -7,5 +7,6 @@ func _ready() -> void:
 		key_.text = "You need a key!"
 
 func _on_body_entered(_body):
-	key_.text = "CONGRATULATIONS!!! YOU WON"
+	if GameManager.key:
+		key_.text = "CONGRATULATIONS!!! YOU WON"
 	
