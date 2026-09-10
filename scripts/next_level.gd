@@ -1,12 +1,11 @@
 extends Area2D
 
+@onready var key_: Label = $"../Label/KEY_"
 
-
+func _ready() -> void:
+	if not GameManager.key:
+		key_.text = "You need a key!"
 
 func _on_body_entered(_body):
-	if GameManager.key:
-		GameManager.level += 1
-		call_deferred("next_level")
-		
-func next_level():
-	get_tree().change_scene_to_file("res://scenes/level_" + str(GameManager.level) + ".tscn")
+	key_.text = "CONGRATULATIONS!!! YOU WON"
+	
